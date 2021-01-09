@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 300;
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 255, 255);
+}
+
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
