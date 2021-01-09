@@ -58,6 +58,14 @@ const buildStyles = () => {
 
 const enableHotReloading = () => {
   watch(
+    "./src/img/**/*",
+    {
+      ignoreInitial: false,
+    },
+    buildImages
+  );
+
+  watch(
     "./src/styles/**/*",
     {
       ignoreInitial: false,
@@ -66,11 +74,11 @@ const enableHotReloading = () => {
   );
 
   watch(
-    "./src/img/**/*",
+    "./src/*.html",
     {
       ignoreInitial: false,
     },
-    buildImages
+    buildDocuments,
   );
 };
 
