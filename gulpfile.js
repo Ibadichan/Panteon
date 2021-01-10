@@ -15,10 +15,24 @@ const {
   series,
 } = gulp;
 
+const buildFavicons = () => {
+  const build = src("./src/favicons/**/*")
+    .pipe(dest("./dist"));
+
+  return build;
+};
+
 const buildImages = () => {
   const build = src("./src/img/**/*")
     .pipe(imagemin())
     .pipe(dest("./dist/img"));
+
+  return build;
+};
+
+const buildVideos = () => {
+  const build = src("./src/video/**/*")
+    .pipe(dest("./dist/video"));
 
   return build;
 };
@@ -58,11 +72,27 @@ const buildStyles = () => {
 
 const enableHotReloading = () => {
   watch(
+    "./src/favicons/**/*",
+    {
+      ignoreInitial: false,
+    },
+    buildFavicons,
+  );
+
+  watch(
     "./src/img/**/*",
     {
       ignoreInitial: false,
     },
     buildImages
+  );
+
+  watch(
+    "./src/video/**/*",
+    {
+      ignoreInitial: false,
+    },
+    buildVideos
   );
 
   watch(
@@ -83,7 +113,9 @@ const enableHotReloading = () => {
 };
 
 const buildAssets = series(
+  buildFavicons,
   buildImages,
+  buildVideos,
   buildStyles,
   buildDocuments,
 );
@@ -91,7 +123,9 @@ const buildAssets = series(
 const tasks = {
   start: enableHotReloading,
   build: buildAssets,
+  "build-favicons": buildFavicons,
   "build-images": buildImages,
+  "build-videos": buildVideos,
   "build-styles": buildStyles,
   "build-documents": buildDocuments,
   default: buildAssets,
