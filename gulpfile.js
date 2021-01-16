@@ -1,4 +1,5 @@
 const gulp = require("gulp");
+const gzip = require('gulp-gzip');
 const postcss = require("gulp-postcss");
 const concat = require("gulp-concat");
 const imagemin = require("gulp-imagemin");
@@ -14,6 +15,11 @@ const {
   watch,
   series,
 } = gulp;
+
+const GZIP_OPTIONS = {
+  deleteMode: "dist",
+  skipGrowingFiles: true,
+};
 
 const buildFavicons = () => {
   const build = src("./src/favicons/**/*")
@@ -39,7 +45,9 @@ const buildVideos = () => {
 
 const buildDocuments = () => {
   const build = src("./src/*.html")
-    .pipe(dest("./dist"));
+    .pipe(dest("./dist"))
+    .pipe(gzip(GZIP_OPTIONS))
+    .pipe(dest("./dist"))
 
   return build;
 };
@@ -63,9 +71,11 @@ const buildStyles = () => {
   ];
 
   const build = src(buildSources)
-    .pipe(concat("style.min.css"))
+    .pipe(concat("style.css"))
     .pipe(postcss(postcssPlugins))
-    .pipe(dest("./dist"));
+    .pipe(dest("./dist"))
+    .pipe(gzip(GZIP_OPTIONS))
+    .pipe(dest("./dist"))
 
   return build;
 };
