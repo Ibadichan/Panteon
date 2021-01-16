@@ -4,6 +4,10 @@
   "repository": "git@github.com:Ibadichan/Panteon.git",
   "author": "Ivan Badichan <badican01117@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "gulp start",
+    "build": "gulp build"
+  },
   "devDependencies": {
     "autoprefixer": "^10.1.0",
     "cssnano": "^4.1.10",
