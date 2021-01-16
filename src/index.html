@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
   <link href="./style.min.css" rel="stylesheet">
 </head>
 
@@ -35,6 +35,7 @@
         <h1 class="destination__header">
           Пункт назначения:
           <span class="destination__city">Пантеон</span>,
+          <br />
           <span class="destination__planet">Марс</span>
         </h1>
 
@@ -108,7 +109,9 @@
     <section class="about-mars">
       <div class="container">
         <h2 class="section-header about-mars__section-header">
-          Марс. Вспомнить всё
+          Марс.
+          <br />
+          Вспомнить всё
         </h2>
 
         <ul class="about-mars__list">
@@ -167,7 +170,7 @@
             </blockquote>
 
             <p class="project-idea__text">
-              — заявил Маск на <cite>Международной астронавтической конференции в
+              — заявил Маск на <cite class="project-idea__cite">Международной астронавтической конференции в
                 Гвадалахаре (Мексика)</cite>. Он обосновал необходимость своего проекта
               вопросом выживания человечества, которое для своего сохранения
               должно стать «космическим видом». Илон поставил перед собой
@@ -303,6 +306,10 @@
 
         <ul class="life-on-mars__slides">
           <li class="life-on-mars__slide life-on-mars__slide_current">
+            <button type="button" class="life-on-mars__control">
+              <span class="visually-hidden">Открыть/Закрыть слайд "Проживание"</span>
+            </button>
+
             <h3 class="life-on-mars__head">Проживание</h3>
 
             <img class="life-on-mars__image" src="./img/mobile/man-in-capsule.jpg" width="262" height="125"
@@ -315,9 +322,17 @@
               душ, приготовить свежую пищу, носить обычную одежду. Весь
               комплекс соединен сетью ходов.
             </p>
+
+            <a class="button button_primary life-on-mars__more" href="/more">
+              Подробнее
+            </a>
           </li>
 
           <li class="life-on-mars__slide">
+            <button type="button" class="life-on-mars__control">
+              <span class="visually-hidden">Открыть/Закрыть слайд "Инженерия"</span>
+            </button>
+
             <h3 class="life-on-mars__head">Инженерия</h3>
 
             <img class="life-on-mars__image" src="./img/mobile/man-in-capsule.jpg" width="262" height="125"
@@ -331,9 +346,17 @@
               of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
               like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
+
+            <a class="button button_primary life-on-mars__more" href="/more">
+              Подробнее
+            </a>
           </li>
 
           <li class="life-on-mars__slide">
+            <button type="button" class="life-on-mars__control">
+              <span class="visually-hidden">Открыть/Закрыть слайд "Лаборатория"</span>
+            </button>
+
             <h3 class="life-on-mars__head">Лаборатория</h3>
 
             <img class="life-on-mars__image" src="./img/mobile/man-in-capsule.jpg" width="262" height="125"
@@ -345,8 +368,16 @@
               letters, as opposed to using 'Content here, content here', making it look like readable English. Many
               desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
             </p>
+
+            <a class="button button_primary life-on-mars__more" href="/more">
+              Подробнее
+            </a>
           </li>
           <li class="life-on-mars__slide">
+            <button type="button" class="life-on-mars__control">
+              <span class="visually-hidden">Открыть/Закрыть слайд "Снимки"</span>
+            </button>
+
             <h3 class="life-on-mars__head">Снимки</h3>
 
             <img class="life-on-mars__image" src="./img/mobile/man-in-capsule.jpg" width="262" height="125"
@@ -358,8 +389,16 @@
               are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
               the middle of text.
             </p>
+
+            <a class="button button_primary life-on-mars__more" href="/more">
+              Подробнее
+            </a>
           </li>
           <li class="life-on-mars__slide">
+            <button type="button" class="life-on-mars__control">
+              <span class="visually-hidden">Открыть/Закрыть слайд "Растения"</span>
+            </button>
+
             <h3 class="life-on-mars__head">Растения</h3>
 
             <img class="life-on-mars__image" src="./img/mobile/man-in-capsule.jpg" width="262" height="125"
@@ -370,38 +409,10 @@
               1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
               original form, accompanied by English versions from the 1914 translation by H. Rackham.
             </p>
-          </li>
-        </ul>
 
-        <ul class="life-on-mars__controls">
-          <li class="life-on-mars__control">
-            <button type="button" class="life-on-mars__icon">
-              <span class="visually-hidden">Проживание</span>
-            </button>
-          </li>
-
-          <li class="life-on-mars__control">
-            <button type="button" class="life-on-mars__icon">
-              <span class="visually-hidden">Инженерия</span>
-            </button>
-          </li>
-
-          <li class="life-on-mars__control">
-            <button type="button" class="life-on-mars__icon">
-              <span class="visually-hidden">Лаборатория</span>
-            </button>
-          </li>
-
-          <li class="life-on-mars__control">
-            <button type="button" class="life-on-mars__icon">
-              <span class="visually-hidden">Снимки</span>
-            </button>
-          </li>
-
-          <li class="life-on-mars__control">
-            <button type="button" class="life-on-mars__icon">
-              <span class="visually-hidden">Растения</span>
-            </button>
+            <a class="button button_primary life-on-mars__more" href="/more">
+              Подробнее
+            </a>
           </li>
         </ul>
       </div>

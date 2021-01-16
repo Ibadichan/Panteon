@@ -1,0 +1,6 @@
+.caveats-of-flight__head {
+  margin: 0;
+  font-size: 1rem;
+  line-height: var(--header-line-height);
+  font-weight: 700;
+}

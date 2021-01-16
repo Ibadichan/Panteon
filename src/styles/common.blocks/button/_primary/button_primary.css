@@ -1,0 +1,10 @@
+.button_primary {
+  color: white;
+  background-color: var(--secondary-color);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.button_primary:focus,
+.button_primary:hover {
+  background-color: #eb4763;
+}

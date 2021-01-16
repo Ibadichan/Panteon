@@ -1,0 +1,7 @@
+.destination__header {
+  margin: 0;
+  font-size: 0.81rem;
+  line-height: var(--header-line-height);
+  font-weight: 300;
+  text-transform: uppercase;
+}

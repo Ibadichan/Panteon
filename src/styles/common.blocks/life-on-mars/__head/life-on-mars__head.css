@@ -1,0 +1,7 @@
+.life-on-mars__head {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: var(--header-line-height);
+  color: black;
+  font-weight: 700;
+}

@@ -1,0 +1,7 @@
+.section-header {
+  margin: 0;
+  font-size: 2.25rem;
+  line-height: var(--header-line-height);
+  color: var(--secondary-color);
+  font-weight: 700;
+}

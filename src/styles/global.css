@@ -57,7 +57,7 @@ body {
   font-weight: 300;
   color: var(--main-color);
   text-rendering: optimizeSpeed;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 
   @media (--mq-medium) {
     font-size: calc(var(--base-font-size) * 1.2);
@@ -92,15 +92,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
 .container {
   margin-left: 4%;
   margin-right: 4%;
@@ -118,5 +109,14 @@ input[type="radio"].visually-hidden {
   @media (--mq-xlarge) {
     margin-left: 18%;
     margin-right: 18%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
