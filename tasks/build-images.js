@@ -1,5 +1,5 @@
-const gulp = require("gulp");
-const imagemin = require("gulp-imagemin");
+const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
 const gulpif = require('gulp-if');
 const config = require('../config');
 
@@ -18,8 +18,8 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 const buildImages = () => {
   const build = src(images.glob)
-    .pipe(gulpif(isProduction, imagemin()))
-    .pipe(dest(images.destinationFolder));
+      .pipe(gulpif(isProduction, imagemin()))
+      .pipe(dest(images.destinationFolder));
 
   return build;
 };

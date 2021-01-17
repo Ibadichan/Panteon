@@ -1,4 +1,4 @@
-const gulp = require("gulp");
+const gulp = require('gulp');
 const gzip = require('gulp-gzip');
 const gulpif = require('gulp-if');
 const config = require('../config');
@@ -19,9 +19,9 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 const buildDocuments = () => {
   const build = src(documents.glob)
-    .pipe(dest(documents.destinationFolder))
-    .pipe(gulpif(isProduction, gzip(gzipOptions)))
-    .pipe(gulpif(isProduction, dest(documents.destinationFolder)));
+      .pipe(dest(documents.destinationFolder))
+      .pipe(gulpif(isProduction, gzip(gzipOptions)))
+      .pipe(gulpif(isProduction, dest(documents.destinationFolder)));
 
   return build;
 };

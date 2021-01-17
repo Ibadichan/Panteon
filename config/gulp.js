@@ -1,42 +1,42 @@
 const gulp = {
   sources: {
     favicons: {
-      glob: "src/favicons/**/*",
-      destinationFolder: "dist",
+      glob: 'src/favicons/**/*',
+      destinationFolder: 'dist',
     },
     images: {
-      glob: "src/img/**/*",
-      destinationFolder: "dist/img",
+      glob: 'src/img/**/*',
+      destinationFolder: 'dist/img',
     },
     videos: {
-      glob: "src/video/**/*",
-      destinationFolder: "dist/video",
+      glob: 'src/video/**/*',
+      destinationFolder: 'dist/video',
     },
     documents: {
-      glob: "src/*.html",
-      destinationFolder: "dist",
+      glob: 'src/*.html',
+      destinationFolder: 'dist',
     },
     styles: {
       glob: [
-        "src/styles/normalize.css",
-        "src/styles/global.css",
-        "src/styles/**/*",
+        'src/styles/normalize.css',
+        'src/styles/global.css',
+        'src/styles/**/*',
       ],
-      destinationFolder: "dist",
-      bundleFileName: "style.css",
+      destinationFolder: 'dist',
+      bundleFileName: 'style.css',
       resolveAssetsOptions: {
         cachebuster: true,
         loadPaths: [
-          "scr/img/",
+          'scr/img/',
         ],
       },
       postcssPresetEnvOptions: {
-        stage: 0
+        stage: 0,
       },
-    }
+    },
   },
   gzipOptions: {
-    deleteMode: "dist",
+    deleteMode: 'dist',
     skipGrowingFiles: true,
   },
 };

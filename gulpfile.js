@@ -9,12 +9,12 @@ const buildDocuments = require('./tasks/build-documents');
 const tasks = {
   start,
   build,
-  "build-favicons": buildFavicons,
-  "build-images": buildImages,
-  "build-videos": buildVideos,
-  "build-styles": buildStyles,
-  "build-documents": buildDocuments,
-  default: build,
+  'build-favicons': buildFavicons,
+  'build-images': buildImages,
+  'build-videos': buildVideos,
+  'build-styles': buildStyles,
+  'build-documents': buildDocuments,
+  'default': build,
 };
 
 module.exports = tasks;

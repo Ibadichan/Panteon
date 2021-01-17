@@ -1,4 +1,4 @@
-const gulp = require("gulp");
+const gulp = require('gulp');
 const config = require('../config');
 const buildFavicons = require('./build-favicons');
 const buildImages = require('./build-images');
@@ -26,33 +26,33 @@ const WATCH_DEFAULT_OPTIONS = {
 
 const start = () => {
   watch(
-    favicons.glob,
-    WATCH_DEFAULT_OPTIONS,
-    buildFavicons,
+      favicons.glob,
+      WATCH_DEFAULT_OPTIONS,
+      buildFavicons,
   );
 
   watch(
-    images.glob,
-    WATCH_DEFAULT_OPTIONS,
-    buildImages
+      images.glob,
+      WATCH_DEFAULT_OPTIONS,
+      buildImages,
   );
 
   watch(
-    videos.glob,
-    WATCH_DEFAULT_OPTIONS,
-    buildVideos
+      videos.glob,
+      WATCH_DEFAULT_OPTIONS,
+      buildVideos,
   );
 
   watch(
-    styles.glob,
-    WATCH_DEFAULT_OPTIONS,
-    buildStyles
+      styles.glob,
+      WATCH_DEFAULT_OPTIONS,
+      buildStyles,
   );
 
   watch(
-    documents.glob,
-    WATCH_DEFAULT_OPTIONS,
-    buildDocuments,
+      documents.glob,
+      WATCH_DEFAULT_OPTIONS,
+      buildDocuments,
   );
 };
 

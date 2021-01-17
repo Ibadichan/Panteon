@@ -1,4 +1,4 @@
-const gulp = require("gulp");
+const gulp = require('gulp');
 const config = require('../config');
 
 const {
@@ -14,7 +14,7 @@ const {
 
 const buildFavicons = () => {
   const build = src(favicons.glob)
-    .pipe(dest(favicons.destinationFolder));
+      .pipe(dest(favicons.destinationFolder));
 
   return build;
 };

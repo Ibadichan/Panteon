@@ -1,4 +1,4 @@
-const gulp = require("gulp");
+const gulp = require('gulp');
 const config = require('../config');
 
 const {
@@ -14,7 +14,7 @@ const {
 
 const buildVideos = () => {
   const build = src(videos.glob)
-    .pipe(dest(videos.destinationFolder));
+      .pipe(dest(videos.destinationFolder));
 
   return build;
 };

@@ -6,18 +6,22 @@
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_ENV=development gulp start",
-    "build": "cross-env NODE_ENV=production gulp build"
+    "build": "cross-env NODE_ENV=production gulp build",
+    "lint": "eslint . --ext .js"
   },
   "devDependencies": {
     "autoprefixer": "^10.1.0",
     "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
+    "eslint": "^7.18.0",
+    "eslint-config-google": "^0.14.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-gzip": "^1.4.2",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.0",
+    "husky": "^5.0.6",
     "postcss": "^8.2.2",
     "postcss-assets": "^5.0.0",
     "postcss-preset-env": "^6.7.0",
