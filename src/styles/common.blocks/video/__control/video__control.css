@@ -1,0 +1,16 @@
+.video__control {
+  display: inline-block;
+  vertical-align: middle;
+
+  font: inherit;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 700;
+
+  color: inherit;
+  text-align: center;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}

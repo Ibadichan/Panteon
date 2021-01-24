@@ -4,4 +4,8 @@
   line-height: var(--header-line-height);
   color: var(--secondary-color);
   font-weight: 700;
+
+  @media (--mq-small) {
+    font-size: 3rem;
+  }
 }

@@ -3,4 +3,8 @@
   font-size: 1rem;
   line-height: var(--header-line-height);
   font-weight: 300;
+
+  @media (--mq-small) {
+    font-size: 0.875rem;
+  }
 }

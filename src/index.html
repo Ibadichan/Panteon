@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panteon</title>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="manifest" href="./site.webmanifest">
-  <meta name="msapplication-TileColor" content="#b91d47">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#b91d47" />
+  <meta name="theme-color" content="#ffffff" />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
-  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -23,10 +23,14 @@
     <div class="container">
       <nav class="site-navigation page-header__site-navigation">
         <a class="site-logo site-logo_size_md">
-          <img src="./img/mobile/logo@1.png" width="142" height="39" alt="Логотип «Пантеон»" />
+          <img sizes="(min-width: 48em) 175px, 142px" srcset="
+                ./img/mobile/logo@1.png 142w,
+                ./img/tablet/logo@1.png 175w
+              " src="./img/mobile/logo@1.png" alt="Логотип «Пантеон»" />
         </a>
 
-        <button class="site-navigation__toggler" type="button">
+        <button class="site-navigation__toggler site-navigation-toggler" type="button">
+          <span class="site-navigation-toggler__text">Меню</span>
           <span class="visually-hidden">Открыть/закрыть меню сайта</span>
         </button>
       </nav>
@@ -35,7 +39,6 @@
         <h1 class="destination__header">
           Пункт назначения:
           <span class="destination__city">Пантеон</span>,
-          <br />
           <span class="destination__planet">Марс</span>
         </h1>
 
@@ -50,6 +53,7 @@
 
           <button type="button" class="video__control">
             <span class="visually-hidden">Старт/Пауза</span>
+            <span class="video-control__text">Смотреть видео</span>
           </button>
         </figure>
       </section>
@@ -109,9 +113,7 @@
     <section class="about-mars">
       <div class="container">
         <h2 class="section-header about-mars__section-header">
-          Марс.
-          <br />
-          Вспомнить всё
+          Марс. Вспомнить всё
         </h2>
 
         <ul class="about-mars__list">
@@ -127,9 +129,7 @@
             </p>
           </li>
           <li class="about-mars__item">
-            <h3 class="about-mars__head">
-              Где это? Как туда доехать?
-            </h3>
+            <h3 class="about-mars__head">Где это? Как туда доехать?</h3>
             <p class="about-mars__info">
               Расстояние до Марса — почти 56 миллионов километров. Чтобы
               преодалеть такое расстояние, нужно лететь на межпланетоном
@@ -148,9 +148,7 @@
 
         <ul class="project-idea__list">
           <li class="project-idea__item">
-            <h3 class="project-idea__head">
-              Илон Маск. Гений или безумец?
-            </h3>
+            <h3 class="project-idea__head">Илон Маск. Гений или безумец?</h3>
 
             <p class="project-idea__text">
               Канадско-американский инженер, предприниматель, изобретатель и
@@ -170,12 +168,13 @@
             </blockquote>
 
             <p class="project-idea__text">
-              — заявил Маск на <cite class="project-idea__cite">Международной астронавтической конференции в
-                Гвадалахаре (Мексика)</cite>. Он обосновал необходимость своего проекта
-              вопросом выживания человечества, которое для своего сохранения
-              должно стать «космическим видом». Илон поставил перед собой
-              цель: скоратить стоимость вывода кораблей в космос в 10 раз, что
-              станет первым шагом для человечества в освоении Марса.
+              — заявил Маск на
+              <cite class="project-idea__cite">Международной астронавтической конференции в Гвадалахаре
+                (Мексика)</cite>. Он обосновал необходимость своего проекта вопросом выживания
+              человечества, которое для своего сохранения должно стать
+              «космическим видом». Илон поставил перед собой цель: скоратить
+              стоимость вывода кораблей в космос в 10 раз, что станет первым
+              шагом для человечества в освоении Марса.
             </p>
           </li>
         </ul>
@@ -209,9 +208,7 @@
         </h2>
 
         <figure class="video caveats-of-flight__video">
-          <figcaption class="visually-hidden">
-            Люди на Марсе
-          </figcaption>
+          <figcaption class="visually-hidden">Люди на Марсе</figcaption>
 
           <video class="video__inner" width="291" height="172" poster="./img/mobile/people-on-mars.jpg"></video>
 
@@ -222,9 +219,7 @@
 
         <ul class="caveats-of-flight__list">
           <li class="caveats-of-flight__item caveats-of-flight__item_current">
-            <h3 class="caveats-of-flight__head">
-              Жить или выживать?
-            </h3>
+            <h3 class="caveats-of-flight__head">Жить или выживать?</h3>
 
             <p class="caveats-of-flight__info">
               Чем отличаются Земля и Марс? Какие условия встретят новых
@@ -240,9 +235,7 @@
             </p>
           </li>
           <li class="caveats-of-flight__item">
-            <h3 class="caveats-of-flight__head">
-              Готовы ли технологии?
-            </h3>
+            <h3 class="caveats-of-flight__head">Готовы ли технологии?</h3>
 
             <p class="caveats-of-flight__info">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -279,9 +272,7 @@
             </p>
           </li>
           <li class="caveats-of-flight__item">
-            <h3 class="caveats-of-flight__head">
-              Жизнь на Марсе
-            </h3>
+            <h3 class="caveats-of-flight__head">Жизнь на Марсе</h3>
 
             <p class="caveats-of-flight__info">
               Aliquam mattis eleifend tempus. Fusce eget nisl ac lectus
@@ -312,8 +303,9 @@
 
             <h3 class="life-on-mars__head">Проживание</h3>
 
-            <img class="life-on-mars__image" src="./img/mobile/man-in-capsule.jpg" width="262" height="125"
-              alt="Человек в космической капсуле" />
+            <img class="life-on-mars__image" sizes="(min-width: 48em) 720px, 262px"
+              srcset="./img/mobile/man-in-capsule.jpg 262w, ./img/tablet/man-in-capsule.jpg 720w"
+              src="./img/mobile/man-in-capsule.jpg" alt="Человек в космической капсуле" />
 
             <p class="life-on-mars__info">
               В основе жилых помещений лежат надувные компоненты — спальня,
@@ -335,16 +327,21 @@
 
             <h3 class="life-on-mars__head">Инженерия</h3>
 
-            <img class="life-on-mars__image" src="./img/mobile/man-in-capsule.jpg" width="262" height="125"
-              alt="Человек в космической капсуле" />
+            <img class="life-on-mars__image" sizes="(min-width: 48em) 720px, 262px"
+              srcset="./img/mobile/man-in-capsule.jpg 262w, ./img/tablet/man-in-capsule.jpg 720w"
+              src="./img/mobile/man-in-capsule.jpg" alt="Человек в космической капсуле" />
 
             <p class="life-on-mars__info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-              like Aldus PageMaker including versions of Lorem Ipsum.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
             </p>
 
             <a class="button button_primary life-on-mars__more" href="/more">
@@ -359,14 +356,18 @@
 
             <h3 class="life-on-mars__head">Лаборатория</h3>
 
-            <img class="life-on-mars__image" src="./img/mobile/man-in-capsule.jpg" width="262" height="125"
-              alt="Человек в космической капсуле" />
+            <img class="life-on-mars__image" sizes="(min-width: 48em) 720px, 262px"
+              srcset="./img/mobile/man-in-capsule.jpg 262w, ./img/tablet/man-in-capsule.jpg 720w"
+              src="./img/mobile/man-in-capsule.jpg" alt="Человек в космической капсуле" />
 
             <p class="life-on-mars__info">
-              It is a long established fact that a reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using 'Content here, content here', making it look like readable English. Many
-              desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+              It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content
+              here, content here', making it look like readable English. Many
+              desktop publishing packages and web page editors now use Lorem
+              Ipsum as their default model text,
             </p>
 
             <a class="button button_primary life-on-mars__more" href="/more">
@@ -380,14 +381,17 @@
 
             <h3 class="life-on-mars__head">Снимки</h3>
 
-            <img class="life-on-mars__image" src="./img/mobile/man-in-capsule.jpg" width="262" height="125"
-              alt="Человек в космической капсуле" />
+            <img class="life-on-mars__image" sizes="(min-width: 48em) 720px, 262px"
+              srcset="./img/mobile/man-in-capsule.jpg 262w, ./img/tablet/man-in-capsule.jpg 720w"
+              src="./img/mobile/man-in-capsule.jpg" alt="Человек в космической капсуле" />
 
             <p class="life-on-mars__info">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text.
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text.
             </p>
 
             <a class="button button_primary life-on-mars__more" href="/more">
@@ -401,13 +405,16 @@
 
             <h3 class="life-on-mars__head">Растения</h3>
 
-            <img class="life-on-mars__image" src="./img/mobile/man-in-capsule.jpg" width="262" height="125"
-              alt="Человек в космической капсуле" />
+            <img class="life-on-mars__image" sizes="(min-width: 48em) 720px, 262px"
+              srcset="./img/mobile/man-in-capsule.jpg 262w, ./img/tablet/man-in-capsule.jpg 720w"
+              src="./img/mobile/man-in-capsule.jpg" alt="Человек в космической капсуле" />
 
             <p class="life-on-mars__info">
-              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
-              1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
-              original form, accompanied by English versions from the 1914 translation by H. Rackham.
+              The standard chunk of Lorem Ipsum used since the 1500s is
+              reproduced below for those interested. Sections 1.10.32 and
+              1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+              reproduced in their exact original form, accompanied by English
+              versions from the 1914 translation by H. Rackham.
             </p>
 
             <a class="button button_primary life-on-mars__more" href="/more">
@@ -435,9 +442,7 @@
         добровольцев.
       </p>
 
-      <a href="/selection-criteria" class="link">
-        Критерии отбора
-      </a>
+      <a href="/selection-criteria" class="link"> Критерии отбора </a>
     </section>
 
     <section class="subscribe">
@@ -495,7 +500,9 @@
         </ul>
       </section>
 
-      <a href="/more-about-project" class="link">Подробнее о проекте</a>
+      <a href="/more-about-project" class="link page-footer__learn-more">
+        Подробнее о проекте
+      </a>
 
       <a class="site-logo site-logo_size_sm">
         <img src="./img/common/logo@2.png" width="114" height="32" alt="Логотип «Пантеон»" />

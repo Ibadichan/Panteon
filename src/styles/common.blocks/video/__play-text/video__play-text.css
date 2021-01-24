@@ -1,0 +1,7 @@
+.video__play-text {
+  display: none;
+
+  @media (--mq-small) {
+    display: block;
+  }
+}

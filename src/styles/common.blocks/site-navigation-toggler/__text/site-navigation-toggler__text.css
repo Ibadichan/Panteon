@@ -1,0 +1,7 @@
+.site-navigation-toggler__text {
+  display: none;
+
+  @media (--mq-small) {
+    display: block;
+  }
+}

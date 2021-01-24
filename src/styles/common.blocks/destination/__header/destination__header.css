@@ -4,4 +4,8 @@
   line-height: var(--header-line-height);
   font-weight: 300;
   text-transform: uppercase;
+
+  @media (--mq-small) {
+    font-size: 1.875rem;
+  }
 }
