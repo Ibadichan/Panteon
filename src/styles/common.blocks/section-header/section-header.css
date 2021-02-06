@@ -8,4 +8,8 @@
   @media (--mq-small) {
     font-size: 3rem;
   }
+
+  @media (--mq-medium) {
+    font-size: 3.75rem;
+  }
 }

@@ -2,9 +2,15 @@
   font-weight: 700;
   font-size: 4.37rem;
   letter-spacing: 0.12rem;
+  color: white;
 
   @media (--mq-small) {
     font-size: 9.812rem;
     letter-spacing: 0.25rem;
+  }
+
+  @media (--mq-medium) {
+    font-size: 12.187rem;
+    letter-spacing: 0.312rem;
   }
 }

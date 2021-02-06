@@ -4,8 +4,15 @@
   line-height: var(--header-line-height);
   font-weight: 300;
   text-transform: uppercase;
+  color: white;
 
   @media (--mq-small) {
     font-size: 1.875rem;
+    color: rgb(255, 207, 223);
+    letter-spacing: 0.062rem;
+  }
+
+  @media (--mq-medium) {
+    font-size: 2.312rem;
   }
 }
