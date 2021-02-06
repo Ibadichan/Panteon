@@ -1,5 +1,7 @@
 const gulp = require('gulp');
+const gulpif = require('gulp-if');
 const config = require('../config');
+const browserSync = require('./constants/browser-sync');
 
 const {
   src,
@@ -12,9 +14,12 @@ const {
   },
 } = config.gulp;
 
+const isDevelopment = process.env.NODE_ENV === 'development';
+
 const buildFavicons = () => {
   const build = src(favicons.glob)
-      .pipe(dest(favicons.destinationFolder));
+      .pipe(dest(favicons.destinationFolder))
+      .pipe(gulpif(isDevelopment, browserSync.stream()));
 
   return build;
 };

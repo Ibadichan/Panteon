@@ -9,6 +9,7 @@ const assets = require('postcss-assets');
 const postcssPresetEnv = require('postcss-preset-env');
 const sortMQ = require('postcss-sort-media-queries');
 const config = require('../config');
+const browserSync = require('./constants/browser-sync');
 
 const {
   src,
@@ -23,6 +24,7 @@ const {
 } = config.gulp;
 
 const isProduction = process.env.NODE_ENV === 'production';
+const isDevelopment = process.env.NODE_ENV === 'development';
 
 const buildStyles = () => {
   const postcssPlugins = [
@@ -43,7 +45,8 @@ const buildStyles = () => {
       .pipe(postcss(postcssPlugins))
       .pipe(dest(styles.destinationFolder))
       .pipe(gulpif(isProduction, gzip(gzipOptions)))
-      .pipe(gulpif(isProduction, dest(styles.destinationFolder)));
+      .pipe(gulpif(isProduction, dest(styles.destinationFolder)))
+      .pipe(gulpif(isDevelopment, browserSync.stream()));
 
   return build;
 };

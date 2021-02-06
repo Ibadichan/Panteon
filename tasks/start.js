@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const config = require('../config');
+const browserSync = require('./constants/browser-sync');
 const buildFavicons = require('./build-favicons');
 const buildImages = require('./build-images');
 const buildVideos = require('./build-videos');
@@ -25,35 +26,41 @@ const WATCH_DEFAULT_OPTIONS = {
 };
 
 const start = () => {
+  browserSync.init({
+    server: {
+      baseDir: './dist',
+    },
+  });
+
   watch(
       favicons.glob,
       WATCH_DEFAULT_OPTIONS,
       buildFavicons,
-  );
+  ).on('change', browserSync.reload);
 
   watch(
       images.glob,
       WATCH_DEFAULT_OPTIONS,
       buildImages,
-  );
+  ).on('change', browserSync.reload);
 
   watch(
       videos.glob,
       WATCH_DEFAULT_OPTIONS,
       buildVideos,
-  );
+  ).on('change', browserSync.reload);
 
   watch(
       styles.glob,
       WATCH_DEFAULT_OPTIONS,
       buildStyles,
-  );
+  ).on('change', browserSync.reload);
 
   watch(
       documents.glob,
       WATCH_DEFAULT_OPTIONS,
       buildDocuments,
-  );
+  ).on('change', browserSync.reload);
 };
 
 module.exports = start;
