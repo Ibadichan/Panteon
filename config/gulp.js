@@ -20,7 +20,9 @@ const gulp = {
       glob: [
         'src/styles/normalize.css',
         'src/styles/global.css',
-        'src/styles/**/*',
+        'src/styles/ui.blocks/**/*',
+        'src/styles/common.blocks/**/*',
+        'src/styles/pages.blocks/**/*',
       ],
       destinationFolder: 'dist',
       bundleFileName: 'style.css',
