@@ -92,6 +92,12 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 1.875rem;
+}
+
 .container {
   margin-left: 4%;
   margin-right: 4%;
