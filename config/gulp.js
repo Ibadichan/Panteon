@@ -13,7 +13,7 @@ const gulp = {
       destinationFolder: 'dist/video',
     },
     documents: {
-      glob: 'src/*.html',
+      glob: 'src/views/**/*.ejs',
       destinationFolder: 'dist',
     },
     styles: {
@@ -38,6 +38,12 @@ const gulp = {
   gzipOptions: {
     deleteMode: 'dist',
     skipGrowingFiles: true,
+  },
+  cleanOptions: {
+    glob: 'dist',
+    read: false,
+    force: true,
+    allowEmpty: true,
   },
 };
 

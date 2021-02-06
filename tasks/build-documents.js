@@ -1,6 +1,8 @@
 const gulp = require('gulp');
 const gzip = require('gulp-gzip');
 const gulpif = require('gulp-if');
+const ejs = require('gulp-ejs');
+const rename = require('gulp-rename');
 const config = require('../config');
 const browserSync = require('./constants/browser-sync');
 
@@ -21,6 +23,8 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 
 const buildDocuments = () => {
   const build = src(documents.glob)
+      .pipe(ejs({}))
+      .pipe(rename({extname: '.html'}))
       .pipe(dest(documents.destinationFolder))
       .pipe(gulpif(isProduction, gzip(gzipOptions)))
       .pipe(gulpif(isProduction, dest(documents.destinationFolder)))

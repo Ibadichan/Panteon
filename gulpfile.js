@@ -1,3 +1,4 @@
+const clean = require('./tasks/clean');
 const build = require('./tasks/build');
 const start = require('./tasks/start');
 const buildFavicons = require('./tasks/build-favicons');
@@ -7,6 +8,7 @@ const buildStyles = require('./tasks/build-styles');
 const buildDocuments = require('./tasks/build-documents');
 
 const tasks = {
+  clean,
   start,
   build,
   'build-favicons': buildFavicons,
