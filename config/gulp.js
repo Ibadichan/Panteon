@@ -1,3 +1,5 @@
+const path = require('path');
+
 const gulp = {
   sources: {
     favicons: {
@@ -13,8 +15,20 @@ const gulp = {
       destinationFolder: 'dist/video',
     },
     documents: {
-      glob: 'src/views/**/*.ejs',
+      glob: 'src/pages/*',
       destinationFolder: 'dist',
+    },
+    scripts: {
+      glob: 'src/scripts/**/*',
+      destinationFolder: 'dist',
+      browserifyOptions: {
+        entries: 'src/scripts/index.js',
+        debug: true,
+      },
+      babelifyOptions: {
+        ignore: ['node_modules'],
+      },
+      bundleFileName: 'index.js',
     },
     styles: {
       glob: [
@@ -28,12 +42,13 @@ const gulp = {
       bundleFileName: 'style.css',
       resolveAssetsOptions: {
         cachebuster: true,
-        loadPaths: [
-          'scr/img/',
-        ],
+        basePath: path.join(__dirname, '../dist'),
       },
       postcssPresetEnvOptions: {
         stage: 0,
+      },
+      pxToRemOptions: {
+        propList: ['*'],
       },
     },
   },
@@ -43,9 +58,6 @@ const gulp = {
   },
   cleanOptions: {
     glob: 'dist',
-    read: false,
-    force: true,
-    allowEmpty: true,
   },
 };
 

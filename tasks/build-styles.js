@@ -7,20 +7,16 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const assets = require('postcss-assets');
 const postcssPresetEnv = require('postcss-preset-env');
+const pxtorem = require('postcss-pxtorem');
 const sortMQ = require('postcss-sort-media-queries');
 const config = require('../config');
 const browserSync = require('./constants/browser-sync');
 
-const {
-  src,
-  dest,
-} = gulp;
+const {src, dest} = gulp;
 
 const {
   gzipOptions,
-  sources: {
-    styles,
-  },
+  sources: {styles},
 } = config.gulp;
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -34,6 +30,7 @@ const buildStyles = () => {
 
   if (isProduction) {
     postcssPlugins.push(
+        pxtorem(styles.pxToRemOptions),
         sortMQ(),
         autoprefixer(),
         cssnano(),
@@ -44,9 +41,9 @@ const buildStyles = () => {
       .pipe(concat(styles.bundleFileName))
       .pipe(postcss(postcssPlugins))
       .pipe(dest(styles.destinationFolder))
+      .pipe(gulpif(isDevelopment, browserSync.stream()))
       .pipe(gulpif(isProduction, gzip(gzipOptions)))
-      .pipe(gulpif(isProduction, dest(styles.destinationFolder)))
-      .pipe(gulpif(isDevelopment, browserSync.stream()));
+      .pipe(gulpif(isProduction, dest(styles.destinationFolder)));
 
   return build;
 };

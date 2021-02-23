@@ -1,19 +1,16 @@
-const gulp = require('gulp');
-const gulpClean = require('gulp-clean');
+const del = require('del');
 const config = require('../config');
 
 const {
   cleanOptions: {
     glob,
-    read,
-    force,
-    allowEmpty,
   },
 } = config.gulp;
 
 const clean = () => {
-  return gulp.src(glob, {read, force, allowEmpty})
-      .pipe(gulpClean());
+  return del([
+    glob,
+  ]);
 };
 
 module.exports = clean;

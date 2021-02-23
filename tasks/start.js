@@ -6,6 +6,7 @@ const buildImages = require('./build-images');
 const buildVideos = require('./build-videos');
 const buildStyles = require('./build-styles');
 const buildDocuments = require('./build-documents');
+const buildScripts = require('./build-scripts');
 
 const {
   watch,
@@ -18,6 +19,7 @@ const {
     videos,
     styles,
     documents,
+    scripts,
   },
 } = config.gulp;
 
@@ -60,6 +62,12 @@ const start = () => {
       documents.glob,
       WATCH_DEFAULT_OPTIONS,
       buildDocuments,
+  ).on('change', browserSync.reload);
+
+  watch(
+      scripts.glob,
+      WATCH_DEFAULT_OPTIONS,
+      buildScripts,
   ).on('change', browserSync.reload);
 };
 

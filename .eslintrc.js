@@ -10,6 +10,7 @@ const eslint = {
   ],
   'parserOptions': {
     'ecmaVersion': 12,
+    'sourceType': 'module',
   },
   'rules': {
   },
