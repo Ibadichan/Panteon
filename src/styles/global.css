@@ -9,12 +9,12 @@
   --secondary-color: rgb(225, 36, 87);
 
   /*  Space variables */
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 2rem;
-  --space-xl: 4rem;
-  --space-xxl: 8rem;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+  --space-xxl: 128px;
 }
 
 @custom-media --mq-small (min-width: 48em);
@@ -55,6 +55,7 @@ body {
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
   font-weight: 300;
+  word-wrap: break-word;
   color: var(--main-color);
   text-rendering: optimizeSpeed;
   background-color: white;
@@ -95,7 +96,7 @@ input[type="radio"].visually-hidden {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  gap: 1.875rem;
+  gap: 16px;
 }
 
 .container {

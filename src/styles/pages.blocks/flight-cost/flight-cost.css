@@ -1,4 +1,30 @@
 .flight-cost {
+  position: relative;
+
+  /* half of ::before element width */
+  margin-top: 144.5px;
+  padding-top: 180px;
+  padding-bottom: 55px;
   color: white;
+
   background-color: #aa3078;
+  background-image: resolve("./img/mobile/rocket-launch-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.flight-cost::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 289px;
+  height: 289px;
+
+  background-image: resolve("./img/mobile/rocket-taking-off-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  transform: translate(-50%, -50%);
 }

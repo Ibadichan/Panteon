@@ -1,6 +1,11 @@
 .destination__text {
-  margin: 0;
-  font-size: 0.875rem;
+  z-index: 1;
+  order: 1;
+  align-self: flex-end;
+  margin-top: calc(-1 * var(--space-sm));
+  max-width: 50%;
+  font-size: 14px;
   line-height: 1.5;
   color: #ffcfdf;
+  text-align: left;
 }

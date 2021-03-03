@@ -1,5 +1,6 @@
 .life-on-mars__more {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  font-size: 1rem;
+  align-self: flex-start;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 16px;
 }

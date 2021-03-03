@@ -1,0 +1,10 @@
+.video__control_primary {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  background-image: resolve("./img/common/play.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+}

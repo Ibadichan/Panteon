@@ -1,4 +1,9 @@
 .page-header {
+  padding-bottom: 32px;
   color: white;
   background-color: #7b1465;
+  background-image: resolve("./img/mobile/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }

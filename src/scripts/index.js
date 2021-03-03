@@ -1,1 +1,2 @@
-import './UI';
+import './ui.blocks';
+import './pages.blocks';

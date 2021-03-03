@@ -1,3 +1,7 @@
 .caveats-of-flight__item {
   color: #908bb1;
 }
+
+.caveats-of-flight__item:not(:last-child) {
+  margin-bottom: var(--space-md);
+}

@@ -1,4 +1,10 @@
 .page-footer {
+  padding-top: 48px;
+  padding-bottom: 36px;
   color: white;
   background-color: #aa3078;
+  background-image: resolve("./img/mobile/footer-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

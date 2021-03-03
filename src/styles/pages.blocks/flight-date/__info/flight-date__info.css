@@ -1,5 +1,6 @@
 .flight-date__info {
   margin: 0;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.5;
+  margin-bottom: var(--space-md);
 }

@@ -1,0 +1,4 @@
+.life-on-mars__panel {
+  display: flex;
+  flex-direction: column;
+}

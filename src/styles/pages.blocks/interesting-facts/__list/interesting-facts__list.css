@@ -1,5 +1,9 @@
 .interesting-facts__list {
+  display: flex;
   margin: 0;
   padding: 0;
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
   list-style: none;
+  overflow-x: auto;
 }

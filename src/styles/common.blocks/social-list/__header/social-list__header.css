@@ -1,10 +1,28 @@
 .social-list__header {
-  margin: 0;
-  font-size: 1rem;
-  line-height: var(--header-line-height);
-  font-weight: 300;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 
   @media (--mq-small) {
-    font-size: 0.875rem;
+    position: static;
+    width: auto;
+    height: auto;
+    white-space: normal;
+    clip-path: none;
+    clip: none;
+    overflow: visible;
+
+    margin: 0;
+    font-size: 16px;
+    line-height: var(--header-line-height);
+    font-weight: 300;
+    font-size: 14px;
   }
 }

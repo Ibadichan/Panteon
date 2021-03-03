@@ -1,5 +1,6 @@
 .flight-cost__info {
   margin: 0;
-  font-size: 1rem;
+  margin-bottom: var(--space-lg);
+  font-size: 16px;
   line-height: 1.5;
 }

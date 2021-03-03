@@ -6,5 +6,5 @@
 
 .button_glowing-white:focus,
 .button_glowing-white:hover {
-  box-shadow: 0 0 1.7rem 0 white;
+  box-shadow: 0 0 27px 0 white;
 }

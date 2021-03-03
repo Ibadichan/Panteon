@@ -1,5 +1,9 @@
 .about-mars__info {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.7;
+}
+
+.about-mars__info + .about-mars__info {
+  margin-top: 16px;
 }

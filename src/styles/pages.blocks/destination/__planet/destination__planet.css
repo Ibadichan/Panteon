@@ -1,16 +1,16 @@
 .destination__planet {
   font-weight: 700;
-  font-size: 4.37rem;
-  letter-spacing: 0.12rem;
+  font-size: 70px;
+  letter-spacing: 2px;
   color: white;
 
   @media (--mq-small) {
-    font-size: 9.812rem;
-    letter-spacing: 0.25rem;
+    font-size: 157px;
+    letter-spacing: 4px;
   }
 
   @media (--mq-medium) {
-    font-size: 12.187rem;
-    letter-spacing: 0.312rem;
+    font-size: 195px;
+    letter-spacing: 5px;
   }
 }

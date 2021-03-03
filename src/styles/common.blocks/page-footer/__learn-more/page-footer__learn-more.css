@@ -1,6 +1,14 @@
 .page-footer__learn-more {
+  opacity: 0.5;
+  margin-bottom: var(--space-lg);
+
   @media (--mq-small) {
-    font-size: 0.875rem;
+    font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
   }
+}
+
+.page-footer__learn-more:hover,
+.page-footer__learn-more:focus {
+  opacity: 1;
 }

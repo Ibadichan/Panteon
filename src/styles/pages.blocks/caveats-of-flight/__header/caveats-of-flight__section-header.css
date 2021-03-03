@@ -1,3 +1,4 @@
 .caveats-of-flight__section-header {
+  margin-bottom: var(--space-lg);
   color: white;
 }

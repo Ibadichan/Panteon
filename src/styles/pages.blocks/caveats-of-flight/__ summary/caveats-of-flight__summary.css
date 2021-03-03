@@ -1,0 +1,40 @@
+.caveats-of-flight__summary {
+  position: relative;
+  display: block;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 5px;
+
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.caveats-of-flight__summary::-webkit-details-marker {
+  display: none;
+}
+
+.caveats-of-flight__summary::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 12px;
+  height: 19px;
+  background-image: resolve("./img/common/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform: translateY(-50%);
+  opacity: 0.4;
+}
+
+[open] > .caveats-of-flight__summary {
+  margin-bottom: var(--space-md);
+}
+
+[open] > .caveats-of-flight__summary::before {
+  opacity: 1;
+  transform: translateY(-50%) rotate(-90deg);
+}

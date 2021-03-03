@@ -1,4 +1,5 @@
 .caveats-of-flight__video {
   display: block;
   margin: 0;
+  margin-bottom: var(--space-lg);
 }

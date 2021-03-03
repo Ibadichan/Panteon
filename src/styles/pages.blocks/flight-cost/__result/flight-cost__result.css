@@ -1,4 +1,7 @@
 .flight-cost__result {
-  font-size: 1.5rem;
+  align-self: flex-start;
+  margin-bottom: var(--space-xl);
+  font-size: 24px;
   line-height: 1.5;
+  border-bottom: 1px solid white;
 }

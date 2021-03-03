@@ -1,15 +1,15 @@
 .section-header {
   margin: 0;
-  font-size: 2.25rem;
+  font-size: 36px;
   line-height: var(--header-line-height);
   color: var(--secondary-color);
   font-weight: 700;
 
   @media (--mq-small) {
-    font-size: 3rem;
+    font-size: 48px;
   }
 
   @media (--mq-medium) {
-    font-size: 3.75rem;
+    font-size: 60px;
   }
 }

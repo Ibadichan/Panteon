@@ -1,4 +1,11 @@
 .caveats-of-flight {
+  padding-top: 65px;
+  padding-bottom: 65px;
   color: white;
+
   background-color: #171436;
+  background-image: resolve("./img/mobile/space-nebula-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }

@@ -1,0 +1,6 @@
+.tabs__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: currentColor;
+}
