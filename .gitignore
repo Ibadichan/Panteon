@@ -12,3 +12,5 @@ Thumbs.db
 dist/
 public/assets/
 .husky
+
+.vercel
