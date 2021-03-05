@@ -6,4 +6,9 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  @media (--mq-small) {
+    padding-bottom: 38px;
+    background-image: resolve("./img/tablet/header-bg.jpg");
+  }
 }

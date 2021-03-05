@@ -1,5 +1,4 @@
-.video__inner {
-  position: relative;
+.page-header__inner {
   display: flex;
   flex-direction: column;
   align-items: center;

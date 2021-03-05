@@ -10,4 +10,10 @@
   background-position: 50% 50%;
   background-size: 20px 20px;
   background-repeat: no-repeat;
+
+  @media (--mq-small) {
+    width: 75px;
+    height: 75px;
+    background-size: 23px 22px;
+  }
 }

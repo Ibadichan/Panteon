@@ -25,10 +25,31 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 14px 14px;
+
+  @media (--mq-small) {
+    transform: translate(calc(-50% - 67.5px - var(--space-sm)), -50%);
+  }
 }
 
 .video_primary .vjs-big-play-button .vjs-icon-placeholder {
   display: none;
+}
+
+.video_primary .vjs-big-play-button::before {
+  content: none;
+
+  @media (--mq-small) {
+    content: "Смотреть видео";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    width: 135px;
+    margin-left: var(--space-md);
+    transform: translateY(-50%);
+  }
 }
 
 .video_primary .vjs-paused .vjs-poster {

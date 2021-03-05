@@ -15,4 +15,10 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   cursor: pointer;
+
+  @media (--mq-small) {
+    width: auto;
+    padding-right: 62px;
+    background-position: center right;
+  }
 }

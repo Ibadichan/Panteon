@@ -8,4 +8,10 @@
   line-height: 1.5;
   color: #ffcfdf;
   text-align: left;
+
+  @media (--mq-small) {
+    width: 130px;
+    margin-top: calc(-1 * var(--space-md));
+    margin-right: var(--space-lg);
+  }
 }

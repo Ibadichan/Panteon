@@ -1,9 +1,0 @@
-.video__play-text {
-  display: none;
-
-  @media (--mq-small) {
-    display: block;
-    font-weight: 700;
-    font-size: 16px;
-  }
-}
