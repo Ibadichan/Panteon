@@ -1,3 +1,14 @@
 .about-mars__item:not(:last-child) {
   margin-bottom: var(--space-lg);
+
+  @media (--mq-small) {
+    margin-bottom: 0;
+  }
+}
+
+.about-mars__item {
+  @media (--mq-small) {
+    max-width: 50%;
+    width: 350px;
+  }
 }

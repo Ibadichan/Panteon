@@ -2,8 +2,13 @@
   display: flex;
   margin: 0;
   padding: 0;
-  padding-top: var(--space-lg);
-  padding-bottom: var(--space-lg);
+  padding-top: 32px;
+  padding-bottom: 32px;
   list-style: none;
   overflow-x: auto;
+
+  @media (--mq-small) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

@@ -1,11 +1,15 @@
 .interesting-facts__item {
   position: relative;
   flex-shrink: 0;
-  width: 130px;
+  width: 135px;
 }
 
 .interesting-facts__item:not(:last-child) {
   margin-right: var(--space-xl);
+
+  @media (--mq-small) {
+    margin-right: 80px;
+  }
 }
 
 .interesting-facts__item:not(:last-child)::after {

@@ -2,6 +2,11 @@
   position: relative;
   padding-top: 48px;
   padding-bottom: 204px;
+
+  @media (--mq-small) {
+    padding-top: 60px;
+    padding-bottom: 300px;
+  }
 }
 
 .about-mars::after {
@@ -15,4 +20,10 @@
     resolve("./img/common/page-bg.png");
   background-position: 69% 100%, 50% 0;
   background-repeat: no-repeat, repeat;
+
+  @media (--mq-small) {
+    height: 300px;
+    background-image: resolve("./img/tablet/rocket-way.svg"),
+      resolve("./img/common/page-bg.png");
+  }
 }

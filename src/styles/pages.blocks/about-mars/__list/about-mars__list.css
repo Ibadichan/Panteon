@@ -2,4 +2,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (--mq-small) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
