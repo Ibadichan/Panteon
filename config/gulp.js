@@ -15,7 +15,7 @@ const gulp = {
       destinationFolder: 'dist/video',
     },
     documents: {
-      glob: 'src/pages/*',
+      glob: 'src/pages/*.html',
       destinationFolder: 'dist',
     },
     scripts: {
@@ -34,9 +34,9 @@ const gulp = {
       glob: [
         'src/styles/normalize.css',
         'src/styles/global.css',
-        'src/styles/ui.blocks/**/*',
-        'src/styles/common.blocks/**/*',
-        'src/styles/pages.blocks/**/*',
+        'src/styles/ui.blocks/**/*.css',
+        'src/styles/common.blocks/**/*.css',
+        'src/styles/pages.blocks/**/*.css',
       ],
       destinationFolder: 'dist',
       bundleFileName: 'style.css',

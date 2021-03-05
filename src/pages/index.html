@@ -26,6 +26,8 @@
     <meta name="msapplication-TileColor" content="#b91d47" />
     <meta name="theme-color" content="#ffffff" />
 
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
@@ -66,29 +68,28 @@
             <span class="destination__planet">Марс</span>
           </h1>
 
-          <figure class="video destination__video">
+          <figure class="video video_primary destination__video">
             <figcaption class="video__caption destination__text">
               Первый город на планете Марс недалеко от горы Олимп
             </figcaption>
 
             <div class="video__inner">
               <video
-                class="video__node video__node_masked_primary"
+                class="video-js video__node destination__video-node"
                 width="215"
                 height="140"
                 poster="./img/mobile/header-video-placeholder.jpg"
-                playsinline
+                data-setup="{}"
+                controls
               >
                 <source src="./video/mars.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that supports HTML5 video.
+                  <a href="/video/mars.mp4" download>Download the video</a>
+                </p>
               </video>
-
-              <button
-                type="button"
-                class="video__control video__control_primary"
-              >
-                <span class="visually-hidden">Старт/Пауза</span>
-                <span class="video__play-text">Смотреть видео</span>
-              </button>
+              </div>
             </div>
           </figure>
         </section>
@@ -272,26 +273,26 @@
             Подводные камни в масштабах космоса
           </h2>
 
-          <figure class="video caveats-of-flight__video">
+          <figure class="video video_primary caveats-of-flight__video">
             <figcaption class="visually-hidden">Люди на Марсе</figcaption>
 
             <div class="video__inner">
               <video
-                class="video__node video__node_masked_primary"
+                class="video-js video__node caveats-of-flight__video-node"
                 width="291"
                 height="172"
                 poster="./img/mobile/people-on-mars.jpg"
-                playsinline
+                data-setup="{}"
+                controls
               >
                 <source src="./video/mars.mp4" type="video/mp4" />
-              </video>
 
-              <button
-                type="button"
-                class="video__control video__control_primary"
-              >
-                <span class="visually-hidden">Старт/Пауза</span>
-              </button>
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that supports HTML5 video.
+                  <a href="/video/mars.mp4" download>Download the video</a>
+                </p>
+              </video>
             </div>
           </figure>
 
@@ -804,6 +805,7 @@
       </div>
     </footer>
 
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
