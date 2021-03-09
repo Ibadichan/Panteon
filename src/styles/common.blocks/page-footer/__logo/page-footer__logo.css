@@ -1,0 +1,5 @@
+.page-footer__logo {
+  @media (--mq-small) {
+    order: 0;
+  }
+}

@@ -3,11 +3,17 @@
   min-height: 400px;
   padding-top: 55px;
   padding-right: 30px;
-  padding-bottom: 65px;
+  padding-bottom: 55px;
   padding-left: 30px;
   background-color: #452c62;
   background-image: resolve("./img/mobile/mars-station-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (--mq-small) {
+    padding-left: 45px;
+    padding-right: 45px;
+    background-image: resolve("./img/tablet/mars-station-bg.jpg");
+  }
 }

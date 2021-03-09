@@ -1,0 +1,17 @@
+.tabs__timeline-line {
+  grid-area: line;
+  margin-right: auto;
+  margin-left: auto;
+  width: 3px;
+  height: 100%;
+  background-color: var(--secondary-color);
+
+  @media (--mq-small) {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 3px;
+  }
+}

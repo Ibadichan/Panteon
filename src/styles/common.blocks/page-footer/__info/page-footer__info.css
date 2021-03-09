@@ -1,0 +1,10 @@
+.page-footer__info {
+  margin-bottom: var(--space-xl);
+
+  @media (--mq-small) {
+    flex-grow: 1;
+    width: 300px;
+    margin-left: var(--space-lg);
+    margin-bottom: 0;
+  }
+}

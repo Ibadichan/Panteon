@@ -35,6 +35,12 @@ const start = () => {
   });
 
   watch(
+      documents.glob,
+      WATCH_DEFAULT_OPTIONS,
+      buildDocuments,
+  ).on('change', browserSync.reload);
+
+  watch(
       favicons.glob,
       WATCH_DEFAULT_OPTIONS,
       buildFavicons,
@@ -56,12 +62,6 @@ const start = () => {
       styles.glob,
       WATCH_DEFAULT_OPTIONS,
       buildStyles,
-  ).on('change', browserSync.reload);
-
-  watch(
-      documents.glob,
-      WATCH_DEFAULT_OPTIONS,
-      buildDocuments,
   ).on('change', browserSync.reload);
 
   watch(

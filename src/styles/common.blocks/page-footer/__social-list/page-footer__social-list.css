@@ -1,3 +1,8 @@
 .page-footer__social-list {
   margin-bottom: var(--space-lg);
+
+  @media (--mq-small) {
+    order: 2;
+    margin-bottom: 0;
+  }
 }

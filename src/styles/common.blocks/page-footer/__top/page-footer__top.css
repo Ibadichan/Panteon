@@ -1,7 +1,7 @@
-.social-list {
+.page-footer__top {
   @media (--mq-small) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    margin-bottom: var(--space-xxl);
   }
 }

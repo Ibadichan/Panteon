@@ -20,6 +20,7 @@
     overflow: visible;
 
     margin: 0;
+    margin-right: var(--space-lg);
     font-size: 16px;
     line-height: var(--header-line-height);
     font-weight: 300;
