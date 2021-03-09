@@ -1,0 +1,5 @@
+.flight-cost_page_main {
+  @media (--mq-small) {
+    margin-bottom: var(--space-xl);
+  }
+}

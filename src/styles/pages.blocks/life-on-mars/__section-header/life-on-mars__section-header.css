@@ -1,3 +1,7 @@
 .life-on-mars__section-header {
   margin-bottom: var(--space-lg);
+
+  @media (--mq-small) {
+    margin-bottom: var(--space-xl);
+  }
 }

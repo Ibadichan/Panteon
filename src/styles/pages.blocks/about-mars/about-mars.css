@@ -2,28 +2,13 @@
   position: relative;
   padding-top: 48px;
   padding-bottom: 204px;
+  background-image: resolve("./img/mobile/rocket-way.svg");
+  background-position: 69% 100%;
+  background-repeat: no-repeat;
 
   @media (--mq-small) {
     padding-top: 60px;
     padding-bottom: 300px;
-  }
-}
-
-.about-mars::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 204px;
-  background-image: resolve("./img/mobile/rocket-way.svg"),
-    resolve("./img/common/page-bg.png");
-  background-position: 69% 100%, 50% 0;
-  background-repeat: no-repeat, repeat;
-
-  @media (--mq-small) {
-    height: 300px;
-    background-image: resolve("./img/tablet/rocket-way.svg"),
-      resolve("./img/common/page-bg.png");
+    background-image: resolve("./img/tablet/rocket-way.svg");
   }
 }

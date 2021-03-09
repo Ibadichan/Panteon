@@ -18,6 +18,7 @@
 }
 
 @custom-media --mq-small (min-width: 48em);
+@custom-media --mq-small-max (max-width: 47.9375em);
 @custom-media --mq-medium (min-width: 64em);
 @custom-media --mq-large (min-width: 85.375em);
 @custom-media --mq-xlarge (min-width: 120em);
@@ -116,6 +117,13 @@ input[type="radio"].visually-hidden {
   @media (--mq-xlarge) {
     margin-left: 18%;
     margin-right: 18%;
+  }
+}
+
+.container_mobile-fluid {
+  @media (--mq-small-max) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

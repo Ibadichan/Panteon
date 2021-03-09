@@ -1,0 +1,5 @@
+.page {
+  background-image: resolve("./img/common/page-bg.png");
+  background-position: 50% 0;
+  background-repeat: repeat;
+}

@@ -1,7 +1,4 @@
 .life-on-mars {
   padding-top: 55px;
   padding-bottom: 70px;
-  background-image: resolve("./img/common/page-bg.png");
-  background-position: 50% 0;
-  background-repeat: repeat;
 }

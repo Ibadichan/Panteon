@@ -1,7 +1,9 @@
 .project-idea {
   padding-top: 95px;
   padding-bottom: 48px;
-  background-image: resolve("./img/common/page-bg.png");
-  background-position: 50% 0;
-  background-repeat: repeat;
+
+  @media (--mq-small) {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
 }

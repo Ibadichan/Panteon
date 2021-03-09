@@ -1,8 +1,0 @@
-.destination__video-node {
-  width: 100%;
-  height: 140px;
-
-  @media (--mq-small) {
-    height: 260px;
-  }
-}

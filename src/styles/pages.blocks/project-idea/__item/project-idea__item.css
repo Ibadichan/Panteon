@@ -1,0 +1,8 @@
+.project-idea__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (--mq-small) {
+    display: block;
+  }
+}

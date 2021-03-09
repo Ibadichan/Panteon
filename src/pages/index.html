@@ -36,7 +36,7 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="page">
     <header class="page-header">
       <div class="container page-header__inner">
         <nav class="site-navigation page-header__site-navigation">
@@ -74,11 +74,11 @@
             </figcaption>
 
             <video
-              class="video-js video__node destination__video-node"
+              class="video-js video__node"
               width="215"
               height="140"
               poster="./img/mobile/header-video-placeholder.jpg"
-              data-setup="{}"
+              data-setup='{"fluid": true}'
               controls
             >
               <source src="./video/mars.mp4" type="video/mp4" />
@@ -193,14 +193,6 @@
             <li class="project-idea__item">
               <h3 class="project-idea__head">Илон Маск. Гений или безумец?</h3>
 
-              <p class="project-idea__text">
-                Канадско-американский инженер, предприниматель, изобретатель и
-                инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже
-                переименованной в PayPal. Планирует потратить большую часть
-                накоплений на реализацию своей мечты, а также мечты многих тысяч
-                романтиков, писателей, учёных: создать внеземную цивилизацию.
-              </p>
-
               <div
                 class="project-idea__inventor avatar avatar_shifted_down-left"
               >
@@ -217,6 +209,14 @@
                   />
                 </span>
               </div>
+
+              <p class="project-idea__text project-idea__about-inventor">
+                Канадско-американский инженер, предприниматель, изобретатель и
+                инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже
+                переименованной в PayPal. Планирует потратить большую часть
+                накоплений на реализацию своей мечты, а также мечты многих тысяч
+                романтиков, писателей, учёных: создать внеземную цивилизацию.
+              </p>
 
               <blockquote class="project-idea__quote">
                 Мы должны сделать эту мечту реальностью за наше время жизни.
@@ -244,24 +244,24 @@
         </div>
       </section>
 
-      <article class="flight-cost">
-        <div class="container">
-          <h2 class="flight-cost__header">Стоимость перелёта</h2>
+      <article
+        class="flight-cost container container_mobile-fluid flight-cost_page_main"
+      >
+        <h2 class="flight-cost__header">Стоимость перелёта</h2>
 
-          <p class="flight-cost__info">
-            Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов.
-            Маск стремится сократить эту цифру в 20 000 раз, что составит
-            <b class="flight-cost__per-person">500 000 долларов</b> на человека.
-          </p>
+        <p class="flight-cost__info">
+          Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов.
+          Маск стремится сократить эту цифру в 20 000 раз, что составит
+          <b class="flight-cost__per-person">500 000 долларов</b> на человека.
+        </p>
 
-          <p class="flight-cost__footer">
-            <strong class="flight-cost__dollars">$500 k</strong>
-            <span class="flight-cost__result">и ты на Марсе!</span>
-            <a href="/buy-ticket" class="button button_glowing-white">
-              Я готов лететь
-            </a>
-          </p>
-        </div>
+        <p class="flight-cost__footer">
+          <strong class="flight-cost__dollars">$500 k</strong>
+          <span class="flight-cost__result">и ты на Марсе!</span>
+          <a href="/buy-ticket" class="button button_glowing-white">
+            Я готов лететь
+          </a>
+        </p>
       </article>
 
       <section class="caveats-of-flight">
@@ -274,11 +274,11 @@
             <figcaption class="visually-hidden">Люди на Марсе</figcaption>
 
             <video
-              class="video-js video__node caveats-of-flight__video-node"
+              class="video-js video__node"
               width="291"
               height="172"
               poster="./img/mobile/people-on-mars.jpg"
-              data-setup="{}"
+              data-setup='{"fluid": true}'
               controls
             >
               <source src="./video/mars.mp4" type="video/mp4" />

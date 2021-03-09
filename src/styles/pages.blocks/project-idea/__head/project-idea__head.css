@@ -1,4 +1,5 @@
 .project-idea__head {
+  order: -1;
   margin: 0;
   margin-bottom: var(--space-lg);
   font-size: 24px;

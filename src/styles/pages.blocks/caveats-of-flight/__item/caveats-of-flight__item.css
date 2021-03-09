@@ -4,4 +4,8 @@
 
 .caveats-of-flight__item:not(:last-child) {
   margin-bottom: var(--space-md);
+
+  @media (--mq-small) {
+    margin-bottom: var(--space-lg);
+  }
 }

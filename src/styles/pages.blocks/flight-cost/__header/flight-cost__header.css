@@ -4,4 +4,8 @@
   font-size: 24px;
   line-height: var(--header-line-height);
   font-weight: 700;
+
+  @media (--mq-small) {
+    margin-bottom: var(--space-lg);
+  }
 }
