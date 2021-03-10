@@ -14,4 +14,8 @@
     margin-bottom: 0;
     width: 340px;
   }
+
+  @media (--mq-small) {
+    width: 393px;
+  }
 }

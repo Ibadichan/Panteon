@@ -16,4 +16,10 @@
     padding-right: 45px;
     background-image: resolve("./img/tablet/mars-station-bg.jpg");
   }
+
+  @media (--mq-medium) {
+    padding-left: 68px;
+    padding-right: 68px;
+    background-image: resolve("./img/desktop/mars-station-bg.jpg");
+  }
 }

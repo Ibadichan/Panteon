@@ -1,4 +1,9 @@
 .life-on-mars {
   padding-top: 55px;
   padding-bottom: 70px;
+
+  @media (--mq-medium) {
+    padding-top: 100px;
+    padding-bottom: 145px;
+  }
 }

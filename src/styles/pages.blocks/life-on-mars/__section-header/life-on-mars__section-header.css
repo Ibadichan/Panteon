@@ -4,4 +4,8 @@
   @media (--mq-small) {
     margin-bottom: var(--space-xl);
   }
+
+  @media (--mq-medium) {
+    margin-bottom: var(--space-lg);
+  }
 }

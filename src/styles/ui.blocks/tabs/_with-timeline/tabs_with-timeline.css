@@ -23,6 +23,10 @@
       "point line"
       "control control";
   }
+
+  @media (--mq-medium) {
+    grid-template-columns: 16px 200px;
+  }
 }
 
 .tabs_with-timeline .tabs__item_selected {

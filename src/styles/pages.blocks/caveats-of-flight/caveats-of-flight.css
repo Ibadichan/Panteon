@@ -14,4 +14,10 @@
     padding-bottom: 94px;
     background-image: resolve("./img/tablet/space-nebula-bg.jpg");
   }
+
+  @media (--mq-medium) {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-image: resolve("./img/desktop/space-nebula-bg.jpg");
+  }
 }
