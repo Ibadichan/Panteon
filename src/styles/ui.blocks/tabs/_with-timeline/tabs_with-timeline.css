@@ -25,7 +25,7 @@
   }
 
   @media (--mq-medium) {
-    grid-template-columns: 16px 200px;
+    grid-template-columns: 16px 150px;
   }
 }
 

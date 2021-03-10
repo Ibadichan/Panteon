@@ -15,7 +15,7 @@
     width: 340px;
   }
 
-  @media (--mq-small) {
+  @media (--mq-medium) {
     width: 393px;
   }
 }
