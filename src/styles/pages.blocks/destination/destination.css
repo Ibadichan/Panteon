@@ -4,4 +4,8 @@
   @media (--mq-small) {
     width: 550px;
   }
+
+  @media (--mq-medium) {
+    width: 655px;
+  }
 }

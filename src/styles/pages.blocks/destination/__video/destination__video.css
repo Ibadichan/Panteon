@@ -1,5 +1,14 @@
 .destination__video {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: 0;
+}
+
+@media (--mq-medium) {
+  .destination__video {
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }

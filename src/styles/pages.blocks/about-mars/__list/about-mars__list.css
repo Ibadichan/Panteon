@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: calc(-1 * var(--space-lg));
 
   @media (--mq-small) {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    margin-bottom: 0;
+    margin-right: calc(-1 * var(--space-lg));
   }
 }

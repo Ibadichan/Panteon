@@ -16,4 +16,9 @@
     height: 75px;
     background-size: 23px 22px;
   }
+
+  @media (--mq-medium) {
+    margin-top: var(--space-md);
+    margin-left: 0;
+  }
 }

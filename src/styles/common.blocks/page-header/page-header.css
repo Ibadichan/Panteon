@@ -11,4 +11,9 @@
     padding-bottom: 38px;
     background-image: resolve("./img/tablet/header-bg.jpg");
   }
+
+  @media (--mq-medium) {
+    padding-bottom: 65px;
+    background-image: resolve("./img/desktop/header-bg.jpg");
+  }
 }

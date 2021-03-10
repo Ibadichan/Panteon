@@ -1,7 +1,7 @@
 .destination__text {
   z-index: 1;
   order: 1;
-  align-self: flex-end;
+  margin-left: auto;
   margin-top: calc(-1 * var(--space-sm));
   max-width: 50%;
   font-size: 14px;
@@ -13,5 +13,25 @@
     width: 130px;
     margin-top: calc(-1 * var(--space-md));
     margin-right: var(--space-lg);
+  }
+
+  @media (--mq-large) {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 200px;
+    padding-left: 70px;
+    margin: 0;
+    transform: translate(100%, -50%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -75px;
+      height: 1px;
+      width: 120px;
+      background-color: #ffcfdf;
+    }
   }
 }

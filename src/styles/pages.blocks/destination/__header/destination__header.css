@@ -17,5 +17,7 @@
 
   @media (--mq-medium) {
     font-size: 36px;
+    text-align: left;
+    margin-bottom: var(--space-lg);
   }
 }
