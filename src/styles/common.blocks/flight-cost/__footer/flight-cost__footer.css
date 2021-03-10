@@ -6,7 +6,18 @@
   @media (--mq-small) {
     clear: both;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+  }
+
+  @media (--mq-medium) {
+    margin-left: -35px;
+    justify-content: center;
+  }
+
+  @media (--mq-large) {
+    clear: none;
+    justify-content: flex-start;
+    margin-left: 0;
   }
 }

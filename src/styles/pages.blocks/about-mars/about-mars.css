@@ -10,5 +10,12 @@
     padding-top: 60px;
     padding-bottom: 300px;
     background-image: resolve("./img/tablet/rocket-way.svg");
+    background-size: cover;
+  }
+
+  @media (--mq-medium) {
+    padding-top: 78px;
+    padding-bottom: 270px;
+    background-image: resolve("./img/desktop/rocket-way.svg");
   }
 }

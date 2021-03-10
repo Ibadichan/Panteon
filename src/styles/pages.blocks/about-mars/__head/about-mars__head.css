@@ -5,4 +5,8 @@
   line-height: var(--header-line-height);
   color: black;
   font-weight: 700;
+
+  @media (--mq-medium) {
+    margin-bottom: var(--space-md);
+  }
 }

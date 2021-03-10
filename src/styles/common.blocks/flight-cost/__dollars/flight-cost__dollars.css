@@ -3,4 +3,8 @@
   font-size: 60px;
   line-height: 1.5;
   font-weight: 300;
+
+  @media (--mq-small) {
+    margin-right: var(--space-lg);
+  }
 }

@@ -5,5 +5,5 @@
 }
 
 .project-idea__text + .project-idea__text {
-  margin-top: 16px;
+  margin-top: var(--space-md);
 }

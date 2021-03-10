@@ -9,5 +9,10 @@
     float: right;
     margin: 0;
     margin-left: var(--space-md);
+    margin-bottom: var(--space-md);
+  }
+
+  @media (--mq-medium) {
+    width: 375px;
   }
 }

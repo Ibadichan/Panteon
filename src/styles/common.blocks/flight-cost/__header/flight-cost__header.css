@@ -8,4 +8,8 @@
   @media (--mq-small) {
     margin-bottom: var(--space-lg);
   }
+
+  @media (--mq-medium) {
+    margin-bottom: var(--space-md);
+  }
 }

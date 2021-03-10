@@ -1,12 +1,14 @@
 .flight-cost {
   position: relative;
-  /* half of ::before element width */
+
   margin-top: 144.5px;
   padding-top: 180px;
   padding-bottom: 55px;
   padding-left: 4%;
   padding-right: 4%;
+
   color: white;
+
   background-color: #aa3078;
   background-image: resolve("./img/mobile/rocket-launch-bg.jpg");
   background-repeat: no-repeat;
@@ -15,23 +17,14 @@
 
   @media (--mq-small) {
     margin-top: 48px;
-    padding: 50px 33px;
+    padding: 50px 25px;
     background-image: resolve("./img/tablet/rocket-launch-bg.jpg");
   }
 
   @media (--mq-medium) {
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-
-  @media (--mq-large) {
-    margin-left: 12%;
-    margin-right: 12%;
-  }
-
-  @media (--mq-xlarge) {
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-top: 30px;
+    padding: 55px 50px;
+    background-image: resolve("./img/desktop/rocket-launch-bg.jpg");
   }
 }
 
@@ -57,9 +50,22 @@
     float: left;
     margin-right: var(--space-lg);
     margin-bottom: var(--space-lg);
-    /* section top padding + 48px by design */
     margin-top: -98px;
     background-image: resolve("./img/tablet/rocket-taking-off-bg.jpg");
     transform: none;
+  }
+
+  @media (--mq-medium) {
+    width: 310px;
+    height: 310px;
+    margin-left: -25px;
+    margin-right: var(--space-xl);
+    margin-bottom: var(--space-md);
+    margin-top: -85px;
+    background-image: resolve("./img/desktop/rocket-taking-off-bg.jpg");
+  }
+
+  @media (--mq-xlarge) {
+    margin-bottom: 0;
   }
 }

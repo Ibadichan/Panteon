@@ -11,8 +11,12 @@
   color: var(--secondary-color);
 
   @media (--mq-small) {
-    max-width: 70%;
     margin-top: var(--space-md);
+  }
+
+  @media (--mq-medium) {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-lg);
   }
 }
 

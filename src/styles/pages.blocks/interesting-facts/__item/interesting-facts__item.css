@@ -2,6 +2,10 @@
   position: relative;
   flex-shrink: 0;
   width: 135px;
+
+  @media (--mq-medium) {
+    width: 155px;
+  }
 }
 
 .interesting-facts__item:not(:last-child) {
@@ -9,6 +13,10 @@
 
   @media (--mq-small) {
     margin-right: 80px;
+  }
+
+  @media (--mq-medium) {
+    margin-right: var(--space-xl);
   }
 }
 
@@ -21,4 +29,12 @@
   height: 50px;
   background-color: rgba(225, 36, 87, 0.15);
   transform: translate(50%, -50%);
+
+  @media (--mq-small) {
+    right: -40px;
+  }
+
+  @media (--mq-medium) {
+    right: calc(var(--space-xl) / -2);
+  }
 }

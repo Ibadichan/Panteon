@@ -6,3 +6,9 @@
     display: block;
   }
 }
+
+.project-idea__item::after {
+  content: "";
+  display: table;
+  clear: both;
+}

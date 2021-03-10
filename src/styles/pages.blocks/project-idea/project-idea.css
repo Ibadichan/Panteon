@@ -6,4 +6,9 @@
     padding-top: 80px;
     padding-bottom: 50px;
   }
+
+  @media (--mq-medium) {
+    padding-top: 130px;
+    padding-bottom: 40px;
+  }
 }

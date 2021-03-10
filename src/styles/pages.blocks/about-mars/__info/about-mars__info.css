@@ -5,5 +5,5 @@
 }
 
 .about-mars__info + .about-mars__info {
-  margin-top: 16px;
+  margin-top: var(--space-md);
 }
