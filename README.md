@@ -1,2 +1,2 @@
 # Panteon
-panteon-mars.vercel.app
+https://panteon-mars.vercel.app/
