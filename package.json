@@ -29,7 +29,7 @@
     "gulp-postcss": "^9.0.0",
     "gulp-terser": "^2.0.1",
     "husky": "^5.0.6",
-    "postcss": "^8.2.2",
+    "postcss": "^8.2.10",
     "postcss-assets": "^5.0.0",
     "postcss-preset-env": "^6.7.0",
     "postcss-pxtorem": "^5.1.1",
